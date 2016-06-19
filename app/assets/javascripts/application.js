@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require dropzone
 //= require dam_uploader
 //= require_tree .
 
