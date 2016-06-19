@@ -1,5 +1,7 @@
-PATH
-  remote: ../dam_uploader
+GIT
+  remote: https://github.com/boost/dam_uploader.git
+  revision: b9eb2728d56eb0218cf591b64d4712c6ccb6c298
+  branch: gus/lucie-design-review
   specs:
     dam_uploader (0.0.2)
       carrierwave
@@ -124,7 +126,6 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     multi_json (1.12.1)
-    mysql (2.9.1)
     mysql2 (0.4.4)
     nio4r (1.2.1)
     nokogiri (1.6.8)
@@ -225,10 +226,12 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   dam_uploader!
+  devise
+  foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
   listen (~> 3.0.5)
-  mysql
+  mysql2
   puma
   rails (>= 5.0.0.beta3, < 5.1)
   sass-rails (~> 5.0)

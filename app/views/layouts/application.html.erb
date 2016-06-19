@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>SafiraDemo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
   </head>
-
-  <body>
+  <%= render 'shared/dam/navigation' %>
+  <body controllerAction="<%= controller_name %> <%= action_name %>">
+    <% flash.each do |key, value| %>
+      <div class="callout <%= key %>" data-closable>
+        <%= value %>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
