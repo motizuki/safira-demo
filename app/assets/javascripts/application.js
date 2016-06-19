@@ -14,8 +14,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
-//= require_tree .
 //= require dam_uploader
+//= require_tree .
 
 $(document).on('ready page:load turbolinks:load', ready);
 function ready() {
