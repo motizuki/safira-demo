@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.0'
 # gem 'capistrano-rails', group: :development
 
 gem 'dam_uploader', git: 'https://github.com/boost/dam_uploader.git', branch: 'gus/lucie-design-review'
+gem 'dropzonejs-rails'
 gem 'foundation-rails'
 gem 'devise'
 

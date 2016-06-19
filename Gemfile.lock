@@ -228,6 +228,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   dam_uploader!
   devise
+  dropzonejs-rails
   foundation-rails
   jbuilder (~> 2.0)
   jquery-rails
