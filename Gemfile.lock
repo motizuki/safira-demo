@@ -132,6 +132,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     orm_adapter (0.5.0)
+    pg (0.18.4)
     pkg-config (1.1.7)
     puma (3.4.0)
     pundit (1.1.0)
@@ -232,6 +233,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   mysql2
+  pg
   puma
   rails (>= 5.0.0.beta3, < 5.1)
   sass-rails (~> 5.0)
